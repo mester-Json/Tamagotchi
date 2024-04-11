@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import Paysage from './8f0280fc33d1b362da5a9435833435d6.gif';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const PetsContainer = styled.div`
-    display: block;
+    display: inline-block;
     justify-content: center;
     background-image: url(${Paysage});
     background-size: contain;
@@ -11,6 +12,7 @@ export const PetsContainer = styled.div`
     margin: auto;
     margin-top: 150px;
     border-radius: 68px ;
+    margin-left: 200px;
 `;
 
 export const DivStat = styled.div`
@@ -19,6 +21,7 @@ export const DivStat = styled.div`
     background-color: #8D86C9;
     border-radius: 68px 68px 0px 0px;
     border-bottom: 5px solid #242038;
+    
 `;
 
 
@@ -85,4 +88,17 @@ export const Reset = styled.button`
     border:5px solid #F7ECE1;
     border-style: double  ; 
     cursor: pointer;
+`;
+
+export const Img = styled.img`
+    width: 50%;
+    height: 50%;
+`;
+
+
+export const Icon = styled(FontAwesomeIcon)`
+    color: white; 
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 40px;
 `;
