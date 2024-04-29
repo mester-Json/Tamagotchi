@@ -4,7 +4,8 @@ import {
     P,
     Button,
     Div,
-    DivContainer
+    DivContainer,
+    DivPrice
 } from "./Shop.style";
 
 function Shop() {
@@ -15,6 +16,11 @@ function Shop() {
         { name: "Item 3", cost: 25 },
         { name: "Item 4", cost: 35 },
         { name: "Item 5", cost: 45 },
+        { name: "Item 6", cost: 50 },
+        { name: "Item 7", cost: 55 },
+        { name: "Item 8", cost: 60 },
+        { name: "Item 9", cost: 70 },
+        { name: "Item 10", cost: 75 },
     ]);
 
 
@@ -29,16 +35,16 @@ function Shop() {
 
     return (
         <DivContainer >
-            <H1>Solde: {balance}</H1>
+            <H1>Solde:  {balance} $</H1>
             <Div style={{
                 overflowY: 'scroll', scrollbarWidth: 'none',
                 msOverflowStyle: 'none',
             }}>
                 {items.map((item, index) => (
-                    <div key={index}>
+                    <DivPrice key={index}>
                         <P>{item.name} - Coût: {item.cost}</P>
                         <Button onClick={() => buyItem(item.cost)}>Acheter</Button>
-                    </div>
+                    </DivPrice>
                 ))}
             </Div>
         </DivContainer>

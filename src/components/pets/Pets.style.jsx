@@ -12,7 +12,7 @@ export const PetsContainer = styled.div`
     margin: auto;
     margin-top: 150px;
     border-radius: 68px ;
-    margin-left: 200px;
+    margin-left: 500px;
 `;
 
 export const DivStat = styled.div`
@@ -96,9 +96,14 @@ export const Img = styled.img`
 `;
 
 
-export const Icon = styled(FontAwesomeIcon)`
-    color: white; 
+export const P = styled.p`
+    color: white;
     cursor: pointer;
-    font-size: 30px;
-    margin-left: 40px;
-`;
+    background-color: #242038;
+    border-radius: 20px;
+    padding: 10px; 
+    width: 100px;
+    font-size: 20px;
+    margin-left: 460px;
+    margin-top: -540px;
+ `;

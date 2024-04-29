@@ -1,16 +1,23 @@
 import styled from 'styled-components';
+import Shop from './supermarket-trading-room-carton-vector-interior_1441-2908.avif';
+
 
 export const H1 = styled.h1`
     color: white;
-    font-size: 40px;
-    margin-top: -570px;
-    margin-left: 1000px;
+    font-size: 30px;
+    margin-top: -75px;
+    margin-right: 1430px;
     margin-bottom: 50px;
-    text-decoration: underline solid #8D86C9;
+    background-color: #242038;
+    padding: 10px;
+    border-top-left-radius:  20px;
+    border-top-right-radius: 20px;
 `;
 
 export const P = styled.p`
-    color: white;
+    color: black;
+    padding: 5px;
+    font-weight: bold;
     font-size: 20px;
 `;
 
@@ -29,15 +36,15 @@ export const Button = styled.button`
         color: white;
     }
 `;
-
 export const Div = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 0px;
-    margin-left: 1000px; 
-    background-color: #8D86C9;
-    border-radius: 68px;
+    margin-top: -50px;
+    margin-right: 1430px; 
+    background-image: url(${Shop});
+    background-size: cover;
+    border-radius: 20px;
     width: 300px;      
     height: 416px;
     padding: 20px;
@@ -47,4 +54,14 @@ export const DivContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+`;
+
+export const DivPrice = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    width: 100%;
 `;

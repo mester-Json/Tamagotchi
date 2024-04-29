@@ -8,7 +8,7 @@ import {
     Reset,
     DivPets,
     Img,
-    Icon
+    P
 }
     from './Pets.style';
 import pkmWalk from './043.png';
@@ -182,7 +182,7 @@ function Pets() {
                 </DivSoin>
 
             </PetsContainer>
-            <Icon icon={faShop} onClick={toggleShop} />
+            <P onClick={toggleShop}>&lt;</P>
             {shopVisible && <Shop />}
         </div>
 
