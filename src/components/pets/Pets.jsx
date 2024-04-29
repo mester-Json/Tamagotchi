@@ -61,10 +61,8 @@ function Pets() {
     }, []);
 
     const resetTamagotchi = () => {
-        setFaim(100);
-        setFatigue(100);
-        setGame(50);
-        setPoop(0);
+        window.location.reload();
+
     };
 
     const [animation, setAnimation] = useState('walk');
@@ -143,6 +141,7 @@ function Pets() {
 
     const toggleShop = () => {
         setShopVisible(shopVisible => !shopVisible);
+
     }
 
     return (

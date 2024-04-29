@@ -100,10 +100,20 @@ export const P = styled.p`
     color: white;
     cursor: pointer;
     background-color: #242038;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     padding: 10px; 
-    width: 100px;
+    width: 30px;
     font-size: 20px;
     margin-left: 460px;
     margin-top: -540px;
- `;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    right: 0px;
+    &:hover {
+        opacity: 1;
+        right: 10px;
+    }
+`;
+
