@@ -12,7 +12,7 @@ export const PetsContainer = styled.div`
     margin: auto;
     margin-top: 150px;
     border-radius: 68px ;
-    margin-left: 500px;
+    margin-left: 500px;    
 `;
 
 export const DivStat = styled.div`
@@ -48,6 +48,7 @@ export const DivPets = styled.div`
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 20px;
+    
 `;
 
 

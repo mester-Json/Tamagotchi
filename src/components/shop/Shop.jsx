@@ -12,8 +12,7 @@ import {
 } from "./Shop.style";
 import { faCoins } from '@fortawesome/free-solid-svg-icons';
 
-function Shop() {
-    const [balance, setBalance] = useState(10);
+function Shop({ balance, setBalance, }) {
     const [items, setItems] = useState([
         { id: 1, name: "Balon", cost: 15, description: "Un ballon pour mais apport du bonheur à votre tamagotchi " },
         { id: 2, name: "Chips", cost: 20, description: "Des Chips qui reduit le taux de faim de 5% mais les envies d'aller au toillet augement " },
@@ -38,13 +37,7 @@ function Shop() {
         });
     }
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setBalance((prevBalance) => prevBalance + 1);
-        }
-            , 100);
-        return () => clearInterval(interval);
-    }, []);
+
 
     const buyItem = (cost) => {
         setBalance((prevBalance) => {

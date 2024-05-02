@@ -143,7 +143,15 @@ function Pets() {
         setShopVisible(shopVisible => !shopVisible);
 
     }
+    const [balance, setBalance] = useState(10);
 
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setBalance((prevBalance) => prevBalance + 1);
+        }, 300);
+
+        return () => clearInterval(interval);
+    }, []);
     return (
         <div>
 
@@ -182,7 +190,7 @@ function Pets() {
 
             </PetsContainer>
             <P onClick={toggleShop}>&lt;</P>
-            {shopVisible && <Shop />}
+            {shopVisible && <Shop balance={balance} setBalance={setBalance} />}
         </div>
 
     );
